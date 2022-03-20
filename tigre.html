@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tigre Blog</title>
+  <meta name="description" content="Venha conferir todas as informações sobre o tigre-siberiano">
+
+  <!-- metas/ogs -->
+  <meta property="og:title" content="Tigre Blog">
+  <meta property="og:description" content="Venha conferir todas as informações sobre o tigre-siberiano">
+  <meta property="og:type" content="website">
+
+  <!-- fonts / roboto / nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- links/ css / favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <header class="background-3" id="header">
+    <div class="container header-content container-main">
+      <div class="header-content-logo">
+        <a href="./index.html" aria-label="retornar para a home">
+          <img src="./img/icons/TigreBlog.svg" alt="Logo" width="220" height="64">
+        </a>
+      </div>
+      <!-- ainda com a classe de nav secundária pois compartilha
+           os mesmos estilos que a nav da home, porém aqui ela se torna a 
+           unica navegação da página, por isso aqui, ela recebe o aria de principal
+           porém na home mantém o aria de secundária -->
+      <nav class="nav-secundaria" aria-label="Navegação primária" data-menu>
+        <button class="menu-mobile" data-menu="button"></button>
+        <ul class="nav-secundaria-itens nav-secunda-itens-tigre" data-menu="list">
+          <li>
+            <a href="./assinaturas.html" class="color-2 size-20 family-title">Assinaturas</a>
+          </li>
+          <li>
+            <a href="./extincao.html" class="color-2 size-20 family-title">Extinção</a>
+          </li>
+          <li>
+            <a href="./assinaturas.html" class="color-2 size-20 family-title">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- div somente para servir de interação com o css
+       e gerar a foto de introdução via background -->
+  <div class="intro intro-tigre">
+  </div>
+  <main>
+    <section class="the-tiger border-separator container-main container-main" aria-labelledby="title-main">
+      <div class=" the-tiger-text">
+        <h1 class="color-2 size-48 family-title" id="title-main">O Tigre-siberiano</h1>
+        <p class="color-2 size-18 family-text">O tigre-siberiano (Panthera tigris altaica) é a maior subespécie de tigre existente, os machos variam entre 180 a 300 kg e 3,5 metros de comprimento. Assim, eles são os maiores felinos existentes na natureza.Atualmente, eles são encontrados em restritas regiões da Rússia, em regiões frias. </p>
+        <p class="color-2 size-18 family-text">Por consequência, a sua pelagem é mais grossa, de modo que possa se proteger do intenso frio.As organizações de proteção dos animais estimam que não existam mais de 500 tigres-siberianos na
+          natureza.</p>
+        <p class="color-2 size-18 family-text">Foi, porém, amplamente caçado devido à sua maravilhosa pelagem. Restam hoje apenas 200 animais vivendo em liberdade, que vêm sendo preservados em áreas especiais.</p>
+      </div>
+      <div class="the-tiger-img">
+        <ul>
+          <li class="the-tiger-img-1">
+            <img src="./img/tigre/siberiano_1.jpg" alt="O tigre siberiano" width="560" height="1260">
+          </li>
+          <li class="the-tiger-img-2">
+            <img src="./img/tigre/siberiano_2.jpg" alt="O tigre siberiano" width="560" height="770">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container-main border-separator tiger-hunter" aria-labelledby="tiger-hunter-title">
+      <h2 class="color-2 size-48 family-title bold" id="tiger-hunter-title">Como o tigre caça</h2>
+      <div class="tiger-hunter-grid">
+        <p class="color-2 size-18 family-title line-height-text first-text">Em seu habitat natural no Extremo Oriente da Rússia, o tigre siberiano desfruta de uma variedade de florestas diferentes, desde as florestas de pinheiro-corno de folhas largas às áreas coníferas do leste asiático e uma grande variedade no meio.Este habitat é importante, pois é o lar dos tipos ideais de presas exigidas pelo tigre siberiano para sobreviver.
+        </p>
+        <p class="color-2 size-18 family-title line-height-text second-text">Os tigres preferem prezas grandes, como o veado, o antílope, bois e porcos (os bois não são tipicamente um prato favorito do caso dos tigres da Sibéria, pois, os tigres temem e respeitam o território do homem,O tigre geralmente caça a noite andando no rastro de animais ao longo dos leitos dos rios.Um tigre depende de usar seus olhos penetrantes e de seus ouvidos aguçados, mas também pode em usar seu olfato.</p>
+        <div class="tiger-hunter-grid-img-1">
+          <img src="./img/tigre/Caça_1.jpg" alt="Tigre caçador imagem um" width="760" height="1080">
+        </div>
+        <div class="tiger-hunter-grid-img-2">
+          <img src="./img/tigre/Caça_2.jpg" alt="Tigre caçador imagem dois" width="1080" height="1080">
+        </div>
+      </div>
+      <div class="call-action">
+        <p class="color-2 size-20 family-title bold line-height-text">Clique para conhecer todos os segredos do grande predador</p>
+        <a href="./assinaturas.html" class="color-2 family-title size-20">Segredos</a>
+      </div>
+    </section>
+
+    <!-- section da reprodução ela possui uma segunda parte proxima
+       aos seus estilos e também essa nova parte deriva de reprodução
+       por isso compartilha dos mesmos estilos e classes, mas lembrando 
+       que é uma outra região dentro de reprodução. -->
+    <section class="reproduction container-main border-separator" aria-labelledby="reproduction-title">
+      <h2 class="color-2 size-48 family-title bold reproduction-title" id="reproduction-title">Reprodução</h2>
+      <div class="reproduction-grid">
+        <div class="reproduction-grid-box-1">
+          <p class="color-2 size-18 line-height-text family-text reproduction-first-text">As fêmeas atraem seus parceiros emitindo um rugido.
+            A gestação dura de 103 à 05 dias, podendo nascer 2 ou 3 filhotes por vez. <br>
+            Somente a fêmea cuida da cria após o nascimento, mas, se um macho adulto acabou de abater sua caça e por acaso encontrar alguns filhotes, mesmo que não sejam seus, ele deixa a cria comer sua caça.</p>
+          <div class="reproduction-img-1">
+            <img src="./img/tigre/Reprodução_1.jpg" alt="Tigre Reprodução">
+          </div>
+        </div>
+        <div class="reproduction-img-2">
+          <img src="./img/tigre/Reprodução_2.jpg" alt="Tigre Reprodução">
+        </div>
+      </div>
+      <div class="reproduction-alone">
+        <h3 class="color-2 size-36 family-title bold reproduction-title-alone">O tigre é solitário</h3>
+        <div class="reproduction-grid">
+          <div class="reproduction-grid-box-1">
+            <p class="color-2 size-18 line-height-text family-text reproduction-first-text reproduction-alone-first-text">Raramente é visto em companhia de outro tigre, somente no caso da fêmea estar no cio, o tigre macho se torna um grande companheiro da fêmea, só não garante fidelidade a ela, pois o tigre macho, cumpre a risca as suas leis territoriais, assim fazendo todas as fêmeas de seu território suas companheiras, já a tigresa e seus filhotes ficam mais ou menos um ano e meio, neste espaço de tempo a mãe dedicada cuida de sua cria, o alimenta, ensina a caçar.</p>
+            <div class="reproduction-img-1">
+              <img src="./img/tigre/Alone_1.jpg" alt="Tigre solitário">
+            </div>
+          </div>
+          <div class="reproduction-img-2">
+            <img src="./img/tigre/Alone_2.jpg" alt="Tigre solitário">
+          </div>
+        </div>
+      </div>
+      <div class="call-action">
+        <p class="color-2 size-20 family-title bold line-height-text">Clique e venha conhecer os detalhes da vida do felino</p>
+        <a href="./assinaturas.html" class="color-2 family-title size-20">Reprodução</a>
+      </div>
+    </section>
+
+    <!-- não foi colado as imagens dentro de uma lista
+       pois não seria possivel fazer os estilos do layout
+       responsivo caso fosse uma lista, tivemos que lidar 
+        com item a item na coluna -->
+    <section class="phases-life-tiger container-main" aria-labelledby="phases-title">
+      <h2 class="color-2 size-48 bold family-title" id="phases-title">As etaspas da vida de um tigre</h2>
+      <div class="grid-geral">
+        <div class="phaser-child phaser-life-tiger-text">
+          <h3 class="color-2 size-32 bold family-title">Infância</h3>
+          <p class="color-2 size-18 family-text line-height-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+        </div>
+        <div class="phaser-adolescence phaser-life-tiger-text">
+          <h3 class="color-2 size-32 bold family-title">Adolescência</h3>
+          <p class="color-2 size-18 family-text line-height-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+        </div>
+        <div class="phaser-adult phaser-life-tiger-text">
+          <h3 class="color-2 size-32 bold family-title">Adulta</h3>
+          <p class="color-2 size-18 family-text line-height-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+        </div>
+        <div class="phaser-life-tiger-img-1">
+          <img src="./img/tigre/Infância.jpg" alt="Fase da Infância" width="744" height="720">
+        </div>
+        <div class="phaser-life-tiger-img-2">
+          <img src="./img/tigre/Adolescência.jpg" alt="Fase da Adolescência" width="744" height="820">
+        </div>
+        <div class="phaser-life-tiger-img-3">
+          <img src="./img/tigre/Adulto.jpg" alt="Fase Adulta" width="744" height="920">
+        </div>
+      </div>
+      <div class="call-action">
+        <p class="color-2 size-20 family-title bold line-height-text">Clique para conhecer todos os detalhes do crescimento do grande felino</p>
+        <a href="./assinaturas.html" class="color-2 family-title size-20">Etapas</a>
+      </div>
+    </section>
+  </main>
+  <section class="more-animals container-main" aria-label="Outros animais">
+    <h2 class="color-2 size-48 bold family-title">Outros espécimes</h2>
+    <ul class="more-animals-itens">
+      <li>
+        <div class="more-animals-itens-title more-animals-itens-title-onca">
+          <h3 class="color-4 size-32 family-title bold">A Onça-pintada</h3>
+        </div>
+        <div class="more-animals-itens-img">
+          <img src="./img/tigre/more-animals/onça.jpg" alt="Onça pintada" width="600" height="800">
+        </div>
+      </li>
+      <li>
+        <div class="more-animals-itens-title more-animals-itens-title-lion">
+          <h3 class="color-4 size-32 family-title bold">O rei da selva</h3>
+        </div>
+        <div class="more-animals-itens-img">
+          <img src="./img/tigre/more-animals/lion.jpg" alt="Leão" width="600" height="900">
+        </div>
+      </li>
+      <li>
+        <div class="more-animals-itens-title more-animals-itens-title-tigre-branco">
+          <h3 class="color-4 size-32 family-title bold">O tigre branco</h3>
+        </div>
+        <div class="more-animals-itens-img">
+          <img src="./img/tigre/more-animals/whiter_tiger.jpg" alt="Tigre Branco" width="600" height="800">
+        </div>
+      </li>
+    </ul>
+    <div class="call-action">
+      <p class="color-2 size-20 family-title bold line-height-text">Clique para conhecer todos os detalhes de outros felinos</p>
+      <a href="./assinaturas.html" class="color-2 family-title size-20">Outros</a>
+    </div>
+  </section>
+
+  <footer class="background-4">
+    <div class="container-main footer-content">
+      <p class="color-2 size-20">Animalblog &copy; todos os direitos reservados</p>
+    </div>
+  </footer>
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>

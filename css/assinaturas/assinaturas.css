@@ -1,0 +1,215 @@
+/* caixa pai */
+#planos {
+  padding-top: 6.25rem;
+  padding-bottom: 3.75rem;
+}
+
+/* colocando a imagem de introdução */
+.intro-assinaturas {
+  background-image: url(../../img/intro/img_intro_ass.jpg);
+}
+
+/* retirando a imagem no estilo mobile */
+@media (max-width: 50rem) {
+  .intro-assinaturas {
+    display: none;
+  }
+}
+
+/* estilos do titulo principal */
+#planos-title {
+  text-align: center;
+}
+
+#planos-title::after {
+  content: "";
+  display: block;
+  width: 6.25rem;
+  height: 0.1875rem;
+  background-color: var(--background-3);
+  margin: 1rem auto 0 auto;
+}
+
+/* quebra padrão de todo titulo no site */
+@media (max-width: 37.5rem) {
+  #planos-title {
+    font-size: var(--size-36);
+  }
+}
+
+/* container geral que segura as caixas com os planos */
+.container-planos {
+  max-width: 82.5rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+  padding-top: 3.75rem;
+}
+
+/* estilos dos titulos gerais */
+.assinaturas-planos h2 {
+  padding-bottom: 1.125rem;
+  text-align: center;
+}
+
+/* estilo do span com o preço do plano */
+.span-price {
+  display: block;
+  border-top: 0.1875rem solid var(--background-3);
+  border-bottom: 0.1875rem solid var(--background-3);
+  text-align: center;
+}
+
+/* lista com as especificações e seus estilos */
+.assinaturas-planos-especificacoes {
+  padding-top: 1.25rem;
+}
+
+.assinaturas-planos-especificacoes li + li {
+  margin-top: 1.25rem;
+}
+
+/* estilo para geral a bolinha */
+.assinaturas-planos-especificacoes span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.assinaturas-planos-especificacoes span::after {
+  content: "";
+  display: inline-block;
+  width: 0.5625rem;
+  height: 0.5625rem;
+  background-color: var(--background-5);
+  border-radius: 50%;
+  min-width: 0.5625rem;
+}
+
+/* button para assinar o plano */
+.link-to-buy a {
+  padding: 0.875rem 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: 0.1875rem solid var(--background-5);
+}
+
+/* alinhando o button ao centro da caixa */
+.link-to-buy {
+  display: grid;
+  place-items: center;
+  padding-top: 2.5rem;
+}
+
+/* estilos de cada caixa que segura um plano */
+.assinaturas-planos > div {
+  max-width: 25rem;
+  background-color: var(--background-8);
+  padding: 1.25rem;
+  border: 0.1875rem solid var(--background-3);
+}
+
+/* flutuação das caixas principais */
+.assinaturas-planos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* estilos para forçar a criação de um scroll-x   
+   dessa forma fazendo o responsivo estourou as medidas
+   vai gerar um scroll no eixo-x*/
+.basico,
+.medio,
+.master {
+  display: grid;
+  min-width: 18.75rem;
+}
+
+/* fazendo o estilo com o scale para dar a ilusão
+   que a caixa do master e maior que as outras, fazendo
+   os ajustes nas posições das caixas */
+.basico {
+  transform: scale(0.9);
+}
+
+.medio {
+  transform: scale(0.9);
+  grid-column: 3;
+}
+
+.master {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.basico > span {
+  padding-top: 0.4rem;
+}
+
+.master > span,
+.medio > span {
+  padding-bottom: 1rem;
+  padding-top: 0.4rem;
+}
+
+/* ponto aonde necessariamente ocorre 
+   a quebra da container e gera o scroll-x */
+@media (max-width: 61.25rem) {
+  .assinaturas-planos {
+    overflow-x: scroll;
+  }
+
+  /* estilo do scroll */
+  .assinaturas-planos::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+
+  .assinaturas-planos::-webkit-scrollbar-track {
+    background-color: var(--background-11);
+  }
+
+  .assinaturas-planos::-webkit-scrollbar-thumb {
+    background-color: var(--background-3);
+    border-radius: 1.25rem;
+    border: 0.25rem solid var(--background-11);
+  }
+}
+
+/* ajuste em uma coluna pois o scroll-x já não estava
+   ficando acessível a visualização que tinha uma barra 
+   de rolagem */
+@media (max-width: 21.875rem) {
+  .assinaturas-planos::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .assinaturas-planos {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .basico {
+    transform: initial;
+    grid-row: 2;
+  }
+
+  .medio {
+    transform: initial;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .master {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .basico,
+  .medio,
+  .master {
+    min-width: initial;
+  }
+}

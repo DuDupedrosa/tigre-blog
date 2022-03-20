@@ -1,0 +1,71 @@
+/* caixa pai que segura todas as outras */
+.reproduction {
+  padding-bottom: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+
+/* estilos do titulo da section */
+#reproduction-title,
+.reproduction-title-alone {
+  margin-bottom: 1.875rem;
+}
+
+#reproduction-title::after,
+.reproduction-title-alone::after {
+  content: "";
+  display: block;
+  width: 6.25rem;
+  height: 0.1875rem;
+  background-color: var(--background-3);
+  margin-top: 1rem;
+}
+
+/* estilos do texto */
+.reproduction-first-text {
+  max-width: 31.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* flutuação interna entras as box */
+.reproduction-grid {
+  display: flex;
+  align-items: flex-end;
+  gap: 0 1.25rem;
+}
+
+/* seção que esta dentro de reprodução deriva dela
+   e compartilha de quase dos mesmos estilos */
+.reproduction-alone {
+  margin-top: 2rem;
+}
+
+/* reduzindo o tamanho do after pois houve redução no
+   tamanho do título */
+.reproduction-title-alone::after {
+  width: 3.75rem;
+  margin-top: 0.75rem;
+}
+
+.reproduction-alone-first-text {
+  max-width: 28.75rem;
+}
+
+/* primeiro ponto de quebra ou somente, 
+   tiramos uma imagem e o layout já se ajustou novamente */
+@media (max-width: 37.5rem) {
+  .reproduction-img-2 {
+    display: none;
+  }
+}
+
+/* ponto de quebra padrão do site */
+@media (max-width: 28.75rem) {
+  #reproduction-title,
+  .reproduction-title-alone {
+    font-size: var(--size-36);
+  }
+
+  .reproduction-title-alone {
+    font-size: var(--size-32);
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tigre Blog</title>
+  <meta name="description" content="Venha conferir todas as informações sobre o tigre-siberiano">
+
+  <!-- metas/ogs -->
+  <meta property="og:title" content="Tigre Blog">
+  <meta property="og:description" content="Venha conferir todas as informações sobre o tigre-siberiano">
+  <meta property="og:type" content="website">
+
+  <!-- fonts / roboto / nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- links/ css / favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <header class="background-3" id="header">
+    <div class="container header-content container-main">
+      <div class="header-content-logo">
+        <a href="./index.html" aria-label="retornar para a home">
+          <img src="./img/icons/TigreBlog.svg" alt="Logo" width="220" height="64">
+        </a>
+      </div>
+      <!-- ainda com a classe de nav secundária pois compartilha
+           os mesmos estilos que a nav da home, porém aqui ela se torna a 
+           unica navegação da página, por isso aqui, ela recebe o aria de principal
+           porém na home mantém o aria de secundária -->
+      <nav class="nav-secundaria" aria-label="Navegação primária" data-menu>
+        <button class="menu-mobile" data-menu="button"></button>
+        <ul class="nav-secundaria-itens nav-secunda-itens-tigre" data-menu="list">
+          <li>
+            <a href="./assinaturas.html" class="color-2 size-20 family-title">Assinaturas</a>
+          </li>
+          <li>
+            <a href="./tigre.html" class="color-2 size-20 family-title">História</a>
+          </li>
+          <li>
+            <a href="./assinaturas.html" class="color-2 size-20 family-title">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- div somente para servir de interação com o css
+       e gerar a foto de introdução via background -->
+  <div class="intro intro-extincao">
+  </div>
+  <main>
+    <article class="container-main ferocidade" aria-label="A ferocidade do ser humano">
+      <h1 class="color-2 size-48 family-title bold">A ferocidade do ser humano</h1>
+      <div class="ferocidade-grid">
+        <div class="ferocidade-grid-text">
+          <p class="color-2 family-text size-18 line-height-text">Presente em mitos, lendas, religiões, filmes, literaturas e outras diversas representações culturais, o tigre é um dos animais que mais desperta o interesse nos seres humanos desde os tempos antigos. Símbolo nacional de países como Índia, Bangladesh, Malásia e Coreia do Sul, mascote de diversas equipes esportivas e empresas ao redor do mundo – até mesmo de marca de cereais de café da manhã, rs – o tigre pode não ser mais uma figura presente nas vidas das gerações futuras.<strong> O felino é essencial para a manutenção de um ecossistema saudável. No entanto, a espécie tem sido vítima do mais feroz e implacável predador de nosso planeta: o ser humano.</strong> </p>
+          <p class="color-2 family-text size-18 line-height-text">A agricultura, a colonização e a expansão urbana também têm sido duras com os animais. Isso porque reduziram drasticamente para apenas 7% seus habitats naturais, o que prejudica diretamente sua sobrevivência e por consequência, sua reprodução. O desmatamento das grandes florestas asiáticas em busca de madeira ou para serem transformadas em campos agrícolas, bem como o aquecimento global também são fatores prejudiciais à preservação da espécie, pois afetam diretamente seu habitat natural.
+          </p>
+          <p class="color-2 family-text size-18 line-height-text">Através dos séculos e das regiões, os tigres sofrem com a maior ameaça à sua espécie, a caça e o contrabando. Por ter a pele, as garras, dentes e os ossos muito visados para usos comerciais e medicinais em alguns países asiáticos, as populações de tigres selvagens vem diminuindo drasticamente a ponto de que, hoje, todas as subespécies de tigres correm altos riscos de extinção. Segundo estimativas da WWF e da Global Tiger Forum realizadas em 2016, com uma queda de 97% de toda a população desde o início do século XX, existem cerca de 4.000 indivíduos selvagens sobreviventes da espécie. Em locais como Bali e Java, suas respectivas subespécies encontram-se extintas graças a caça praticada de maneira implacável. </p>
+        </div>
+        <div class="ferocidade-grid-img">
+          <div>
+            <img src="./img/extincao/Ferocidade-1.jpg" alt="Imagem de um tigre descontente" width="920" height="947">
+          </div>
+          <div>
+            <img src="./img/extincao/Ferocidade-2.jpg" alt="Imagem de um tigre descontente" width="920" height="947">
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="container-main esperanca" aria-label="Ainda há esperança">
+      <h1 class="color-2 bold family-title size-48">Ainda há esperança</h1>
+      <div class="esperanca-grid">
+        <div class="esperanca-text">
+          <p class="color-2 family-text line-height-text size-18">Dez anos podem ser o que separam a espécie de seu fim, caso a sociedade continue em um ritmo irrefreável de destruição da natureza. Há dez anos, em 29/07/2010, na região de São Petersburgo, na Rússia, foi criado o Dia Internacional do Tigre, com o plano de que esta data servisse para reiterar a importância da conservação da espécie e da preservação da fauna e da flora que os abrigam e alimentam.</p>
+          <p class="color-2 family-text line-height-text size-18">Desde então, muitas fundações e projetos têm se esforçado na implementações de medidas que visam reduzir os efeitos prejudiciais das ações humanas que afetam os tigres, suas presas e seus habitat. A WWF também tem liderado uma campanha global para tentar, até o ano de 2022 (ano do tigre), dobrar o número de tigres selvagens e garantir a proteção a longo prazo da espécie.</p>
+          <p class="color-2 family-text line-height-text size-18"><strong>Nos próximos dez anos será necessário continuar lutando, juntos, com olhos de tigre, pela conservação da fauna.</strong> Devemos manter a esperança de que um dia possamos reverter a sua ameaça de extinção, proporcionando a oportunidade desse animal raro e fascinante dar novamente o primeiro e mais importante passo rumo a uma nova década, repletos de vida.</p>
+        </div>
+        <div class="esperanca-img-1">
+          <img src="./img/extincao/esperança_1.jpg" alt="Tigre esperança imagem um" width="840" height="1112">
+        </div>
+        <div class="esperanca-img-2">
+          <img src="./img/extincao/experança_2.jpg" alt="Tigre esperança imagem dois" width="1880" height="800">
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class=" background-4">
+    <div class="container-main footer-content">
+      <p class="color-2 size-20">Animalblog &copy; todos os direitos reservados</p>
+    </div>
+  </footer>
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>

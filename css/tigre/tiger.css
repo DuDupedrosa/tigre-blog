@@ -1,0 +1,88 @@
+/* ajuste no padding do header geral
+   pois aqui entra mais um item no header
+   então para melhor layout diminuímos um pouco
+   o padding */
+.nav-secunda-itens-tigre li a {
+  padding: 0.8rem;
+}
+
+/* imagem de introdução */
+.intro-tigre {
+  background-image: url(../../img/intro/img_intro-tigre.jpg);
+}
+
+/* flutuação geral */
+.the-tiger {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem;
+  margin: 6.25rem auto 3.75rem auto;
+  padding-bottom: 5rem;
+}
+
+/* estilo do titulo da section */
+.the-tiger-text h1 {
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+.the-tiger-text h1::after {
+  content: "";
+  display: block;
+  width: 3.75rem;
+  height: 0.1875rem;
+  background-color: var(--background-3);
+  margin-top: 0.625rem;
+}
+
+/* estilo dos textos da section */
+.the-tiger-text p {
+  max-width: 21.25rem;
+  line-height: 1.38;
+}
+
+.the-tiger-text p + p {
+  margin-top: 1.25rem;
+}
+
+/* flutuação das imagens */
+.the-tiger-img ul {
+  display: flex;
+  gap: 1.25rem;
+}
+
+/* primeiro break tirando o background da img
+   pois não faz mais o estilo do mobile o background
+   e depois retirando a segunda imagem da section */
+@media (max-width: 50rem) {
+  .the-tiger-img-2 {
+    display: none;
+  }
+
+  .intro-tigre {
+    display: none;
+  }
+}
+
+/* quebra a baixo de 600px quando tiramos a imagem
+   pois não estava fazendo sentido jogar ela em baixo
+   dos texto, e do lado estava prejudicando o layout
+   por isso a remoção */
+@media (max-width: 37.5rem) {
+  .the-tiger-img-1 {
+    display: none;
+  }
+
+  .the-tiger-text p {
+    max-width: max-content;
+  }
+}
+
+/* ultima quebra diminuindo o title
+   para garantir que não ocorra uma quebra nele
+   e afete o estilo */
+@media (max-width: 28.75rem) {
+  .the-tiger-text h1 {
+    font-size: var(--size-36);
+  }
+}

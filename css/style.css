@@ -1,0 +1,24 @@
+/* estilos gerais */
+@import url(./global/reset.css);
+@import url(./global/variables.css);
+@import url(./global/utility.css);
+/* estilos gerais / header e footer */
+@import url(./global/header.css);
+@import url(./global/footer.css);
+
+/* estilos da home */
+@import url(./home/intro-home.css);
+
+/* estilos da página sobre o tigre */
+@import url(./tigre/tiger.css);
+@import url(./tigre/hunter.css);
+@import url(./tigre/reproduction.css);
+@import url(./tigre/phaser.css);
+@import url(./tigre/more-animals.css);
+
+/* estilos da página do grande risco */
+@import url(./extincao/ferocidade.css);
+@import url(./extincao/esperanca.css);
+
+/* assinaturas */
+@import url(./assinaturas/assinaturas.css);

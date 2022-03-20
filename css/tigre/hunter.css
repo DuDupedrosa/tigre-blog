@@ -1,0 +1,97 @@
+/* caixa pai que segura todos os elementos */
+.tiger-hunter {
+  padding-bottom: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+
+/* estilo dos textos */
+.first-text {
+  max-width: 22.5rem;
+}
+
+.second-text {
+  max-width: 32.5rem;
+}
+
+/* estilo do título */
+#tiger-hunter-title {
+  margin-bottom: 1.75rem;
+}
+
+#tiger-hunter-title::after {
+  content: "";
+  display: block;
+  width: 6.25rem;
+  height: 0.1875rem;
+  background: var(--background-3);
+  margin-top: 1rem;
+}
+
+/* começa a flutuação do conteúdo */
+.tiger-hunter-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 2.5rem 1.25rem;
+}
+
+/* colocando a segunda imagem para acompanhar o height
+   da primeira */
+.tiger-hunter-grid-img-2 img {
+  height: 100%;
+}
+
+/* começa o responsivo */
+@media (max-width: 50rem) {
+  /* quebrando para uma coluna */
+  .tiger-hunter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* colocando os textos para pegarem
+     sempre de ponta a ponta, para montar
+     o estilo responsivo */
+  .first-text {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    max-width: max-content;
+  }
+  /* a imagem que acompanha o texto */
+  .tiger-hunter-grid-img-1 {
+    grid-column: 1 / -1;
+  }
+
+  .second-text {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    max-width: max-content;
+  }
+  /* a imagem que acompanha o texto */
+  .tiger-hunter-grid-img-2 {
+    max-width: max-content;
+    grid-column: 1 / -1;
+  }
+
+  /* reduzindo igualmente as proporções das imagens
+     porque quando cai pra uma coluna elas ficam muito
+     grande para o tamanho mobile, então diminuirmos
+     e centralizamos ao centro para ter um layout mais
+     agradável */
+  .tiger-hunter-grid-img-1 img,
+  .tiger-hunter-grid-img-2 img {
+    width: 21.875rem;
+    height: 21.875rem;
+  }
+
+  .tiger-hunter-grid-img-1,
+  .tiger-hunter-grid-img-2 {
+    justify-self: center;
+  }
+}
+
+/* utlima quebra padrão no site, todo titulo
+   cai para 36px em 460 */
+@media (max-width: 28.75rem) {
+  #tiger-hunter-title {
+    font-size: var(--size-36);
+  }
+}

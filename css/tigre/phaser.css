@@ -1,0 +1,106 @@
+/* caixa pai */
+.phases-life-tiger {
+  padding-bottom: 3.75rem;
+}
+
+/* estilo do texto principal */
+.phases-life-tiger h2 {
+  text-align: center;
+  margin-bottom: 5.125rem;
+}
+
+.phases-life-tiger h2::after {
+  content: "";
+  display: block;
+  width: 6.25rem;
+  height: 0.1875rem;
+  background-color: var(--background-2);
+  margin: 1rem auto 0 auto;
+}
+
+/* estilos gerais dos títulos */
+.phaser-life-tiger-text h3 {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* estilos do separador geral */
+.phaser-life-tiger-text h3::before {
+  content: "";
+  display: inline-block;
+  width: 0.3125rem;
+  height: 3.125rem;
+}
+
+/* estilo after do title de infância */
+.phaser-child h3::before {
+  background-color: var(--background-5);
+}
+
+/* estilo after do title de adolescência */
+.phaser-adolescence h3::before {
+  background-color: var(--background-6);
+}
+
+/* estilo after do title de adulto */
+.phaser-adult h3::before {
+  background-color: var(--background-7);
+}
+
+/* estilos gerais dos parágrafos */
+.phaser-life-tiger-text p {
+  max-width: 18.75rem;
+}
+
+/* flutuação geral do conteúdo */
+.grid-geral {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+  gap: 3.125rem 1.25rem;
+}
+
+/* primeiro ponto de quebra */
+@media (max-width: 50rem) {
+  /* quebra tudo para uma coluna */
+  .grid-geral {
+    grid-template-columns: 1fr;
+  }
+
+  /* ajustando as imagens de acordo com os seus textos */
+  .phaser-life-tiger-img-1 {
+    grid-row: 2;
+  }
+
+  .phaser-life-tiger-img-2 {
+    grid-row: 4;
+  }
+
+  /* aumenta o tamanho do texto de ponta a ponta */
+  .phaser-life-tiger-text p {
+    max-width: max-content;
+  }
+
+  /* reduzindo o tamanho da imagem */
+  .phaser-life-tiger-img-1 img,
+  .phaser-life-tiger-img-2 img,
+  .phaser-life-tiger-img-3 img {
+    width: 21.875rem;
+    height: 21.875rem;
+  }
+
+  .phaser-life-tiger-img-1,
+  .phaser-life-tiger-img-2,
+  .phaser-life-tiger-img-3 {
+    justify-self: center;
+  }
+}
+
+/* ultimo ponto de quebra */
+@media (max-width: 37.5rem) {
+  .phases-life-tiger h2 {
+    font-size: var(--size-36);
+  }
+}

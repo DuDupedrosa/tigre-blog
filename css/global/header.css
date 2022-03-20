@@ -1,0 +1,147 @@
+/* button que ativa o menu mobile porém começa
+   com display de none é só é ativado quando entra
+   os estilos responsivo, menor que 800px */
+.menu-mobile {
+  display: none;
+}
+
+/* flutuação principal do header */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+/* flutuação interna dos links da nav */
+.nav-secundaria-itens {
+  display: flex;
+  gap: 1.25rem;
+}
+
+/* estilos do links da navegação */
+.nav-secundaria-itens li a {
+  font-style: italic;
+  font-weight: 500;
+  padding: 0.9375rem 2rem;
+  letter-spacing: 0.1rem;
+  border: 0.125rem solid var(--background-1);
+  border-radius: 0.25rem;
+  transition: 0.3s;
+}
+
+.nav-secundaria-itens li a:hover {
+  border-color: var(--background-2);
+}
+
+/* começa o responsivo do header */
+@media (max-width: 50rem) {
+  /* estilos do menu hambúrguer */
+  .menu-mobile {
+    display: block;
+    border: none;
+    padding: 1rem 0.6rem;
+    /* background-color: #d40000; */
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .menu-mobile::before {
+    content: "";
+    display: inline-block;
+    width: 2.625rem;
+    height: 0.25rem;
+    background-color: var(--background-1);
+    box-shadow: 0 0.625rem var(--background-1), 0 -0.625rem var(--background-1);
+  }
+
+  /* reduzindo o size da logo, pois estava 
+     muito grande */
+  .header-content-logo {
+    width: 10rem;
+  }
+
+  /* transformando em display grid só para
+     facilitar o novo posicionamento dos eleamentos
+     do header */
+  .header-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .header-content-logo {
+    grid-column: 2;
+  }
+
+  /* começa os estilos da nova navegação */
+  .nav-secundaria {
+    grid-row: 1;
+    position: relative;
+  }
+
+  .nav-secundaria-itens li a {
+    border: none;
+    width: 100%;
+    padding-left: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-style: normal;
+  }
+
+  /* gerando o detalhe de cada link */
+  .nav-secundaria-itens li a::before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.1875rem;
+    background-color: var(--background-3);
+  }
+
+  /* gerando o separador entre os links */
+  .nav-secundaria-itens li + li {
+    border-top: 0.125rem solid var(--background-3);
+  }
+
+  /* entra o novo o estilo da caixa
+     que segura todos os links de navegação, 
+     começa com display de none e via JavaScript
+     ele vai tornar display block de acordo
+     com o click no button */
+  .nav-secundaria-itens {
+    display: none;
+    position: absolute;
+    background-color: var(--background-1);
+    border-radius: 0.25rem;
+    top: 3.125rem;
+    z-index: 1;
+    transition: 0.3s;
+  }
+
+  /* estilos para interação via JavaScript */
+  @keyframes show-menu {
+    from {
+      opacity: 0;
+      transform: translate3d(-40px, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  [data-menu="list"].active-menu.nav-secundaria-itens {
+    display: block;
+    animation: show-menu 0.6s forwards;
+  }
+
+  [data-menu="button"] {
+    transition: 0.4s;
+  }
+
+  [data-menu="button"].active-menu {
+    transform: rotate(90deg);
+  }
+}

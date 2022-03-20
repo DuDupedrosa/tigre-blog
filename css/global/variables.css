@@ -1,0 +1,36 @@
+:root {
+  /* colors */
+  --color-1: #ffffff;
+  --color-2: #000000;
+  --color-3: #ff7900;
+  --color-4: #a4a4a4;
+
+  /* background-colors */
+  --background-1: #ffffff;
+  --background-2: #000000;
+  --background-3: #ff7900;
+  --background-4: #ff9e00;
+  --background-5: #0000e8;
+  --background-6: #ff001a;
+  --background-7: #ff00ff;
+  --background-8: #e9ecef;
+  --background-9: #38b000;
+  --background-10: #ffbd00;
+  --background-11: #f2f2f2;
+
+  /* font-sizes */
+  --size-12: 0.75rem; /* 12px */
+  --size-14: 0.875rem; /* 14px */
+  --size-16: 1rem; /* 16px */
+  --size-18: 1.125rem; /* 18px */
+  --size-20: 1.25rem; /* 20px */
+  --size-24: 1.5rem; /* 24px */
+  --size-28: 1.75rem; /* 28px */
+  --size-32: 2rem; /* 32px */
+  --size-36: 2.25rem; /* 36px */
+  --size-48: 3rem; /* 48px */
+
+  /* font-family */
+  --family-title: "Nunito", sans-serif;
+  --family-text: "Roboto", sans-serif;
+}

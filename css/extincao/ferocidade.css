@@ -1,0 +1,82 @@
+/* colocando o background correto
+   herda os estilos gerais somente alterando
+   o caminho */
+.intro-extincao {
+  background-image: url(../../img/intro/img_intro_extinção.jpg);
+}
+
+/* caixa pai */
+.ferocidade {
+  padding-top: 6.25rem;
+  padding-bottom: 3.75rem;
+}
+
+/* estilos do titulo principal */
+.ferocidade h1 {
+  margin-bottom: 2.25rem;
+}
+
+.ferocidade h1::after {
+  content: "";
+  display: block;
+  width: 6.25rem;
+  height: 0.1875rem;
+  background-color: var(--background-3);
+  margin-top: 1rem;
+}
+
+/* flutuação geral */
+.ferocidade-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+}
+
+/* estilos gerais dos textos */
+.ferocidade-grid-text p {
+  max-width: 28.75rem;
+}
+
+.ferocidade-grid-text p + p {
+  margin-top: 1.25rem;
+}
+
+/* ferocidade imagens */
+.ferocidade-grid-img div + div {
+  margin-top: 1.25rem;
+}
+
+/* primeiro ponto de quebra */
+@media (max-width: 50rem) {
+  /* retirado a imagem de introdução */
+  .intro-extincao {
+    display: none;
+  }
+
+  /* quebrando tudo para uma coluna */
+  .ferocidade-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* dando mais espaço para o texto crescer */
+  .ferocidade-grid-text p {
+    max-width: 32.5rem;
+  }
+
+  .ferocidade-grid-img div + div {
+    margin-top: 0;
+  }
+
+  /* flutuando as imagens para o nono estilo */
+  .ferocidade-grid-img {
+    display: flex;
+    gap: 1.25rem;
+  }
+}
+
+/* ultimo ponto de quebra */
+@media (max-width: 37.5rem) {
+  .ferocidade h1 {
+    font-size: var(--size-36);
+  }
+}

@@ -1,0 +1,65 @@
+/* caixa-pai */
+.esperanca {
+  padding-bottom: 3.75rem;
+}
+
+/* flutuação principal */
+.esperanca-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 3.75rem;
+}
+
+.esperanca-img-2 {
+  grid-column: 1 / -1;
+}
+
+/* estilos do titulo principal */
+.esperanca h1 {
+  margin-bottom: 2rem;
+}
+
+.esperanca h1::after {
+  content: "";
+  display: block;
+  width: 6.25rem;
+  height: 0.1875rem;
+  background-color: var(--background-3);
+  margin-top: 1rem;
+}
+
+/* estilos gerais dos textos */
+.esperanca-text p {
+  max-width: 28.75rem;
+}
+
+.esperanca-text p + p {
+  margin-top: 1.25rem;
+}
+
+/* primeiro ponto de quebra */
+@media (max-width: 52.5rem) {
+  /* quebra para uma coluna */
+  .esperanca-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem 0;
+  }
+
+  /* deixando os textos crescerem mais */
+  .esperanca-text p {
+    max-width: 32.5rem;
+  }
+
+  /* tirado a imagem um e mantendo só a dois em baixo
+     do texto */
+  .esperanca-img-1 {
+    display: none;
+  }
+}
+
+/* quebra padrão dos títulos */
+@media (max-width: 37.5rem) {
+  .esperanca h1 {
+    font-size: var(--size-36);
+  }
+}

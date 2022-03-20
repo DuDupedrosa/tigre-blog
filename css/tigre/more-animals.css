@@ -1,0 +1,98 @@
+/* caixa pai */
+.more-animals {
+  padding-bottom: 3.75rem;
+}
+
+/* estilos do titulo principal */
+.more-animals h2 {
+  margin-bottom: 5rem;
+}
+
+.more-animals h2::after {
+  content: "";
+  display: block;
+  width: 6.25rem;
+  height: 0.1875rem;
+  background-color: var(--background-3);
+  margin-top: 1.25rem;
+}
+
+/* estilos gerais do títulos de cada animal */
+.more-animals-itens-title h3 {
+  padding: 1.25rem 1.125rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* border top gerado em cada caixa do titulo */
+.more-animals-itens-title {
+  background-color: var(--background-8);
+  border-top: 0.1875rem solid transparent;
+}
+
+/* cor de cada border de cada animal */
+.more-animals-itens-title-onca {
+  border-color: var(--background-6);
+}
+
+.more-animals-itens-title-lion {
+  border-color: var(--background-9);
+}
+
+.more-animals-itens-title-tigre-branco {
+  border-color: var(--background-10);
+}
+
+/* flutuação geral */
+.more-animals-itens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+  gap: 0 1.25rem;
+}
+
+/* definindo um min-width para cada li
+   para ele estourar a caixa em 800px e 
+   assim gerar o estilo do responsivo com
+   o scroll no eixo x, para não precisar, quebrar
+   tudo para uma coluna */
+.more-animals-itens li {
+  min-width: 15rem;
+}
+
+/* entra os estilos do responsivo */
+@media (max-width: 50rem) {
+  .more-animals-itens {
+    /* estilo do scroll gerado quando quebra a caixa */
+    overflow-x: scroll;
+    padding-bottom: 2rem;
+  }
+
+  /* estilo do scroll */
+  .more-animals-itens::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+
+  .more-animals-itens::-webkit-scrollbar-track {
+    background-color: var(--background-11);
+  }
+
+  .more-animals-itens::-webkit-scrollbar-thumb {
+    background-color: var(--background-3);
+    border-radius: 20px;
+    border: 0.25rem solid var(--background-11);
+  }
+
+  /* diminuindo a font do titulo de cada anima
+     para evitar quebra */
+  .more-animals-itens-title h3 {
+    font-size: var(--size-24);
+  }
+}
+
+/* ultimo ponto de quebra */
+@media (max-width: 37.5rem) {
+  .more-animals h2 {
+    font-size: var(--size-32);
+  }
+}

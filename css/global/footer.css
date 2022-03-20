@@ -1,0 +1,16 @@
+.footer-content {
+  padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+}
+
+.footer-content p {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 28.75rem) {
+  .footer-content p {
+    font-size: var(--size-16);
+  }
+}

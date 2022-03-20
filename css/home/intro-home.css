@@ -1,0 +1,131 @@
+/* caixa pai a qual leva o background
+   e por isso o padding bottom nela */
+.intro-home-bg {
+  padding-bottom: 7.5rem;
+}
+
+/* flutuação principal */
+.intro-home {
+  display: flex;
+  gap: 2.875rem;
+  align-items: center;
+}
+
+/*  contendo o crescimento da imagem, 
+    pois foi exportado com 2x por conta
+    da qualidade, e por isso tivemos
+    que reduzir o seu tamanho */
+.intro-home-img img {
+  width: 40.625rem;
+  height: auto;
+}
+
+/* estilos do titulo principal */
+.intro-home-content h1 {
+  font-weight: bold;
+}
+
+/* estilos da segunda parte do titulo */
+.intro-home-content span {
+  font-weight: bold;
+  display: block;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* estilos geral dos parágrafos */
+.intro-home-content p {
+  max-width: 25rem;
+  font-weight: bold;
+  line-height: 1.33;
+}
+
+.intro-home-content p + p {
+  margin-top: 1.25rem;
+}
+
+/* estilos dos links que levam para as outras páginas */
+.nav-primaria {
+  margin-top: 1rem;
+}
+
+/* flutuação entre o links */
+.nav-primaria ul {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: flex-start;
+}
+
+/* estilos compartilhados dos dois links */
+.nav-primaria ul li a {
+  font-style: italic;
+  border: 0.125rem solid var(--background-1);
+  transition: 0.3s;
+}
+
+.nav-primaria ul li a:hover {
+  color: var(--color-1);
+}
+
+/* estilo especifico para um dos links */
+.nav-primaria ul li:first-child a {
+  padding: 1.0625rem 0.8125rem;
+}
+
+.nav-primaria ul li:last-child a {
+  padding: 1.0625rem 1.0625rem 1.0625rem 1.125rem;
+}
+
+/* responsivo */
+@media (max-width: 61.25rem) {
+  /* tirando a imagem que caráter somente
+     estilizador e estava prejudicando o
+     layout */
+  .intro-home-img {
+    display: none;
+  }
+
+  /* estilos para ajustar a intro sem a imagem */
+  .intro-home-content {
+    padding-top: 3.75rem;
+  }
+
+  .intro-home {
+    align-items: stretch;
+  }
+
+  .intro-home-content p {
+    max-width: 31.25rem;
+    font-weight: bold;
+    line-height: 1.33;
+  }
+
+  .intro-home-content span {
+    margin-bottom: 2rem;
+  }
+
+  .intro-home-bg {
+    padding-bottom: 3.75rem;
+  }
+}
+
+/*  Reduzida font dos links para não 
+    esmagar a caixa */
+@media (max-width: 28.75rem) {
+  .nav-primaria ul li a {
+    font-size: var(--size-18);
+  }
+}
+
+/* ultimo ponto de quebra para garantir total
+   responsividade aos links */
+@media (max-width: 23.25rem) {
+  .nav-primaria ul {
+    flex-direction: column;
+  }
+
+  .nav-primaria ul li a {
+    width: 100%;
+    text-align: center;
+  }
+}

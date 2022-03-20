@@ -1,0 +1,154 @@
+/* container principal */
+.container-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+
+/* container exclusiva para a home */
+.container-intro-home {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+
+/* estilo da introdução de todas as páginas
+   que possuem a intro com uma foto introdutória
+   compartilham a base dos estilos mudando a penas 
+   a url de cada imagem para cada página */
+
+.intro {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+/* estilo do border separador das sections */
+.border-separator {
+  border-bottom: 0.1875rem solid var(--background-4);
+}
+
+/* estilo padrão dos btns de call action */
+.call-action {
+  display: grid;
+  place-items: center;
+  margin-top: 3.75rem;
+}
+
+.call-action p {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.call-action a {
+  padding: 1.0625rem 3.75rem;
+  text-align: center;
+  background-color: var(--background-3);
+  border: 0.125rem solid var(--background-2);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  transition: 0.3s;
+}
+
+.call-action a:hover {
+  color: var(--color-1);
+}
+
+/* font-family */
+
+/* nunito */
+.family-title {
+  font-family: var(--family-title);
+}
+
+/* roboto */
+.family-text {
+  font-family: var(--family-text);
+}
+
+.line-height-text {
+  line-height: 1.38;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* estilos pre definidos para adiantar a criação
+   dos estilos */
+/* classe que carregam a calor definida */
+.color-1 {
+  color: var(--color-1);
+}
+
+.color-2 {
+  color: var(--color-2);
+}
+
+.color-3 {
+  color: var(--color-3);
+}
+
+.color-4 {
+  color: var(--color-4);
+}
+/* classe que carregam a background-calor definido */
+.background-1 {
+  background-color: var(--background-1);
+}
+
+.background-2 {
+  background-color: var(--background-2);
+}
+
+.background-3 {
+  background-color: var(--background-3);
+}
+
+.background-4 {
+  background-color: var(--background-4);
+}
+
+/* classe que carregam a font-size definido */
+.size-12 {
+  font-size: var(--size-12);
+}
+
+.size-14 {
+  font-size: var(--size-14);
+}
+
+.size-16 {
+  font-size: var(--size-16);
+}
+
+.size-18 {
+  font-size: var(--size-18);
+}
+
+.size-20 {
+  font-size: var(--size-20);
+}
+
+.size-24 {
+  font-size: var(--size-24);
+}
+
+.size-28 {
+  font-size: var(--size-28);
+}
+
+.size-32 {
+  font-size: var(--size-32);
+}
+
+.size-36 {
+  font-size: var(--size-36);
+}
+
+.size-48 {
+  font-size: var(--size-48);
+}
