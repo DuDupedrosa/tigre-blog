@@ -8,7 +8,7 @@
 
 /* imagem de introdução */
 .intro-tigre {
-  background-image: url(../../img/intro/img_intro-tigre.jpg);
+  background-image: url(../img/intro/img_intro-tigre.jpg);
 }
 
 /* flutuação geral */
@@ -27,7 +27,7 @@
 }
 
 .the-tiger-text h1::after {
-  content: "";
+  content: '';
   display: block;
   width: 3.75rem;
   height: 0.1875rem;
