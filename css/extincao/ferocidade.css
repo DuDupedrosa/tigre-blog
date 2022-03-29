@@ -2,7 +2,7 @@
    herda os estilos gerais somente alterando
    o caminho */
 .intro-extincao {
-  background-image: url(../../img/intro/img_intro_extinção.jpg);
+  background-image: url(../img/intro/img_intro_extinção.jpg);
 }
 
 /* caixa pai */
@@ -17,7 +17,7 @@
 }
 
 .ferocidade h1::after {
-  content: "";
+  content: '';
   display: block;
   width: 6.25rem;
   height: 0.1875rem;
